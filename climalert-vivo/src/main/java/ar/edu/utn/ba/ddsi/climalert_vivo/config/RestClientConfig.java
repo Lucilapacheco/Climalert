@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;
 
 @Configuration
-public class RestClientconfig {
+public class RestClientConfig {
 
   @Bean
   public RestClient weatherRestClient(WeatherApiProperties properties){
-    return RestClient.builder().baseUrl(properties.baseurl()).build();
+    return RestClient.builder().baseUrl(properties.baseUrl()).build();
   }
 }

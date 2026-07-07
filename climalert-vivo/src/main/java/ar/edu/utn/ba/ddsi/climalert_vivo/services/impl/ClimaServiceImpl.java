@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ClimaServiceImpl {
+public class ClimaServiceImpl implements ClimaService {
   private static final Logger LOGGER = LoggerFactory.getLogger(ClimaServiceImpl.class);
 
   private final WeatherApiClient weatherApiClient;

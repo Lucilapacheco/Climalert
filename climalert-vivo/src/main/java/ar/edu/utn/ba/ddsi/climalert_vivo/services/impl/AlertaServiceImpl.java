@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 
 @Service
-public class AlertaServiceImpl {
+public class AlertaServiceImpl implements AlertaService {
   private static final Logger LOGGER = LoggerFactory.getLogger(AlertaServiceImpl.class);
 
   private final ClimaService climaService;

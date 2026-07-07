@@ -23,7 +23,7 @@ public class ClimaRepositoryInMemory implements ClimaRepository {
       return Optional.empty();
     }
 
-    return Optional.of(historial.getLast());
+    return Optional.of(historial.get(historial.size() - 1));
   }
 
   @Override

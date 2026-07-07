@@ -1,5 +1,6 @@
 package ar.edu.utn.ba.ddsi.climalert_vivo.client;
 
+import ar.edu.utn.ba.ddsi.climalert_vivo.config.WeatherApiProperties;
 import ar.edu.utn.ba.ddsi.climalert_vivo.dtos.WeatherApiResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
@@ -8,9 +9,9 @@ import org.springframework.web.client.RestClient;
 public class WeatherApiClient {
 
   private final RestClient weatherRestClient;
-  private final WeatherApiClient properties;
+  private final WeatherApiProperties properties;
 
-  public WeatherApiClient(RestClient weatherRestClient, WeatherApiClient properties) {
+  public WeatherApiClient(RestClient weatherRestClient, WeatherApiProperties properties) {
     this.weatherRestClient = weatherRestClient;
     this.properties = properties;
   }
