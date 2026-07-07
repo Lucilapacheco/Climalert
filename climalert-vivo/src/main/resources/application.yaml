@@ -1,3 +1,28 @@
 spring:
   application:
     name: climalert-vivo
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+weather-api:
+  base-url: https://api.weatherapi.com/v1
+  api-key: f9fdc356209348e497d10215260707
+  location: "Buenos Aires"
+
+alertas:
+  temperatura-minima: 35
+  humedad-minima: 60
+  destinatarios:
+    - admin@clima.com
+    - emergencias@clima.com
+    - meteorologia@clima.com
